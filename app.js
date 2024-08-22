@@ -13,6 +13,14 @@ navLinks.addEventListener("click",(e)=>{
     menuBtnIcon.setAttribute("class","ri-menu-line");
 });
 
+var typed = new Typed(".auto-type",{
+    strings : ["programmer", "Designer", "Youtuber"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    loop : true
+});     
+          
+
 const scrollRevealOption = {
     distance: "50px",
     origin: "bottom",  // Fixed typo here
@@ -34,6 +42,35 @@ ScrollReveal().reveal(".header_container p", {
 });
 
 ScrollReveal().reveal(".header_btns", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
+ScrollReveal().reveal(".project_card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".experience_list li", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".footer_container h2", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".footer_container p", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".footer_container .mail_to", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".footer_social", {
     ...scrollRevealOption,
     delay: 1500,
 });
